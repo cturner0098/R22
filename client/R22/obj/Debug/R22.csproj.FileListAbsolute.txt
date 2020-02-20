@@ -7,3 +7,11 @@ C:\Users\cturn\source\repos\R22\R22\obj\Debug\R22.Properties.Resources.resources
 C:\Users\cturn\source\repos\R22\R22\obj\Debug\R22.csproj.GenerateResource.cache
 C:\Users\cturn\source\repos\R22\R22\obj\Debug\R22.exe
 C:\Users\cturn\source\repos\R22\R22\obj\Debug\R22.pdb
+C:\Users\cturn\Documents\GitHub\R22\client\R22\obj\Debug\R22.frmMain.resources
+C:\Users\cturn\Documents\GitHub\R22\client\R22\obj\Debug\R22.Properties.Resources.resources
+C:\Users\cturn\Documents\GitHub\R22\client\R22\obj\Debug\R22.csproj.GenerateResource.cache
+C:\Users\cturn\Documents\GitHub\R22\client\R22\obj\Debug\R22.exe
+C:\Users\cturn\Documents\GitHub\R22\client\R22\obj\Debug\R22.pdb
+C:\Users\cturn\Documents\GitHub\R22\client\R22\bin\Debug\R22.exe.config
+C:\Users\cturn\Documents\GitHub\R22\client\R22\bin\Debug\R22.exe
+C:\Users\cturn\Documents\GitHub\R22\client\R22\bin\Debug\R22.pdb
