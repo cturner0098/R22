@@ -28,26 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnSend = new System.Windows.Forms.Button();
             this.txtIP = new System.Windows.Forms.TextBox();
             this.btnConnect = new System.Windows.Forms.Button();
             this.nudPort = new System.Windows.Forms.NumericUpDown();
             this.cmbScripts = new System.Windows.Forms.ComboBox();
             this.btnGetScripts = new System.Windows.Forms.Button();
-            this.txtSend = new System.Windows.Forms.TextBox();
+            this.btnExecute = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudPort)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnSend
-            // 
-            this.btnSend.Location = new System.Drawing.Point(196, 62);
-            this.btnSend.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(56, 21);
-            this.btnSend.TabIndex = 4;
-            this.btnSend.Text = "Send";
-            this.btnSend.UseVisualStyleBackColor = true;
-            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // txtIP
             // 
@@ -56,6 +44,7 @@
             this.txtIP.Name = "txtIP";
             this.txtIP.Size = new System.Drawing.Size(118, 20);
             this.txtIP.TabIndex = 0;
+            this.txtIP.Text = "64.110.131.193";
             // 
             // btnConnect
             // 
@@ -87,7 +76,6 @@
             // 
             // cmbScripts
             // 
-            this.cmbScripts.Enabled = false;
             this.cmbScripts.FormattingEnabled = true;
             this.cmbScripts.Location = new System.Drawing.Point(9, 36);
             this.cmbScripts.Name = "cmbScripts";
@@ -96,37 +84,39 @@
             // 
             // btnGetScripts
             // 
-            this.btnGetScripts.Enabled = false;
             this.btnGetScripts.Location = new System.Drawing.Point(177, 36);
             this.btnGetScripts.Name = "btnGetScripts";
-            this.btnGetScripts.Size = new System.Drawing.Size(75, 21);
+            this.btnGetScripts.Size = new System.Drawing.Size(77, 21);
             this.btnGetScripts.TabIndex = 6;
             this.btnGetScripts.Text = "Get Scripts";
             this.btnGetScripts.UseVisualStyleBackColor = true;
             this.btnGetScripts.Click += new System.EventHandler(this.btnGetScripts_Click);
             // 
-            // txtSend
+            // btnExecute
             // 
-            this.txtSend.Location = new System.Drawing.Point(9, 63);
-            this.txtSend.Name = "txtSend";
-            this.txtSend.Size = new System.Drawing.Size(182, 20);
-            this.txtSend.TabIndex = 7;
+            this.btnExecute.Location = new System.Drawing.Point(9, 63);
+            this.btnExecute.Name = "btnExecute";
+            this.btnExecute.Size = new System.Drawing.Size(245, 23);
+            this.btnExecute.TabIndex = 7;
+            this.btnExecute.Text = "Execute";
+            this.btnExecute.UseVisualStyleBackColor = true;
+            this.btnExecute.Click += new System.EventHandler(this.btnExecute_Click);
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(264, 89);
-            this.Controls.Add(this.txtSend);
+            this.Controls.Add(this.btnExecute);
             this.Controls.Add(this.btnGetScripts);
             this.Controls.Add(this.cmbScripts);
             this.Controls.Add(this.nudPort);
             this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.txtIP);
-            this.Controls.Add(this.btnSend);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmMain";
             this.Text = "R22";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudPort)).EndInit();
             this.ResumeLayout(false);
@@ -135,13 +125,12 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnSend;
         private System.Windows.Forms.TextBox txtIP;
         private System.Windows.Forms.Button btnConnect;
         private System.Windows.Forms.NumericUpDown nudPort;
         private System.Windows.Forms.ComboBox cmbScripts;
         private System.Windows.Forms.Button btnGetScripts;
-        private System.Windows.Forms.TextBox txtSend;
+        private System.Windows.Forms.Button btnExecute;
     }
 }
 
