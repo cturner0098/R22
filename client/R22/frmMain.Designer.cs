@@ -41,7 +41,7 @@
             // btnSend
             // 
             this.btnSend.Location = new System.Drawing.Point(196, 62);
-            this.btnSend.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSend.Margin = new System.Windows.Forms.Padding(2);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(56, 21);
             this.btnSend.TabIndex = 4;
@@ -52,16 +52,15 @@
             // txtIP
             // 
             this.txtIP.Location = new System.Drawing.Point(9, 11);
-            this.txtIP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIP.Margin = new System.Windows.Forms.Padding(2);
             this.txtIP.Name = "txtIP";
             this.txtIP.Size = new System.Drawing.Size(118, 20);
             this.txtIP.TabIndex = 0;
-            this.txtIP.Text = "64.110.131.193";
             // 
             // btnConnect
             // 
             this.btnConnect.Location = new System.Drawing.Point(198, 10);
-            this.btnConnect.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConnect.Margin = new System.Windows.Forms.Padding(2);
             this.btnConnect.Name = "btnConnect";
             this.btnConnect.Size = new System.Drawing.Size(56, 19);
             this.btnConnect.TabIndex = 2;
@@ -125,7 +124,7 @@
             this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.txtIP);
             this.Controls.Add(this.btnSend);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmMain";
             this.Text = "R22";
             this.Load += new System.EventHandler(this.frmMain_Load);
