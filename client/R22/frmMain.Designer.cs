@@ -44,7 +44,6 @@
             this.txtIP.Name = "txtIP";
             this.txtIP.Size = new System.Drawing.Size(118, 20);
             this.txtIP.TabIndex = 0;
-            this.txtIP.Text = "64.110.131.193";
             // 
             // btnConnect
             // 

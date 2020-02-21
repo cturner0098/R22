@@ -18,7 +18,6 @@ namespace R22
         NetworkStream nwStream;
         TcpClient client;
         private bool connected = false;
-        Socket sock;
         byte[] bytes = new byte[1024];
         static byte[] bytesToRead;
         static int bytesRead;
@@ -32,11 +31,6 @@ namespace R22
             
         }
 
-        private void btnSend_Click(object sender, EventArgs e)
-        {
-            // SendData(txtSend.Text);
-        }
-
         private void btnConnect_Click(object sender, EventArgs e)
         {
             try
@@ -47,24 +41,6 @@ namespace R22
             {
                 MessageBox.Show(ex.ToString(), "Error!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-
-
-
-            /*sock = new Socket(ip.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
-
-            Socket listener = sock.Accept();
-            try
-            {
-                sock.Connect(endPoint);
-                int bytesRecieved = listener.Receive(bytes);
-                Console.WriteLine("Echoed test = {0}",
-                    Encoding.ASCII.GetString(bytes, 0, bytesRecieved));
-                Console.WriteLine("Socket connected to {0}", sock.RemoteEndPoint.ToString());
-                connected = true;
-            } catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString(), "Error!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }*/
         }
 
         private void btnGetScripts_Click(object sender, EventArgs e)
@@ -114,8 +90,8 @@ namespace R22
             {
                 try
                 {
-                    sock.Shutdown(SocketShutdown.Both);
-                    sock.Close();
+                    client.Close();
+                    nwStream.Close();
                 } catch { }
             }
         }
